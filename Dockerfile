@@ -24,7 +24,7 @@ WORKDIR /papyrusjs
 # Get PapyrusJS
 RUN wget -O papyrusjs.zip https://www.dropbox.com/s/kct9as5inz927ls/papyrusjs-linux_v1.0.5-dev-sajones-201907090600-64.zip?dl=1
 RUN unzip papyrusjs.zip
-RUN chmod +x /papyrusjs/papyrusjs
+RUN chmod +x /papyrusjs/papyrus
 
 # Copy the script into the target location
 COPY generate_map.sh /usr/local/bin/generate_map.sh 

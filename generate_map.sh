@@ -22,7 +22,7 @@ cp -r /MyWorld /CurrentWorld
 
 # Generate the map save to a log file and pipe to stdout
 echo GENERATING MAP
-/papyrusjs/papyrusjs --world="/CurrentWorld" --output="/usr/local/apache2/htdocs/" -v > /var/log/papyrus_overworld.log 2>&1
+/papyrusjs/papyrus --world="/CurrentWorld" --output="/usr/local/apache2/htdocs/" -v > /var/log/papyrus_overworld.log 2>&1
 
 # Check if we should generate nether
 #one=1;
